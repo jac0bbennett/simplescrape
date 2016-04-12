@@ -6,11 +6,14 @@ This is a simple and extremely lightweight web page scraper especially designed 
 ```python
 import simplescrape
 
-page = simplescrape.scrape_link('http://www.theverge.com/2016/4/12/11416122/there-will-be-a-bot-for-everything')
-title = page.title
-description = page.description
-image = page.image
-favicon = page.favicon
+url = http://www.theverge.com/2016/4/12/11416122/there-will-be-a-bot-for-everything
+
+if simplescrape.check_link():
+  page = simplescrape.scrape_link('')
+  title = page.title
+  description = page.description
+  image = page.image
+  favicon = page.favicon
 ```
 
 ## Requirements

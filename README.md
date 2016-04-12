@@ -1,6 +1,6 @@
 # simplescrape.py
 
-This is a simple web page scraper especially designed for articles. The scraper retrieves the page's title, description, meta image, and favicon if present. The module uses techniques found in testing to find the favicon almost everytime.
+This is a simple and extremely lightweight web page scraper especially designed for articles. The scraper retrieves the page's title, description, meta image, and favicon if present. The module uses techniques found in testing to find the favicon almost everytime.
 
 ## Usage
 ```python

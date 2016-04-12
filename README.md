@@ -8,8 +8,8 @@ import simplescrape
 
 url = http://www.theverge.com/2016/4/12/11416122/there-will-be-a-bot-for-everything
 
-if simplescrape.check_link():
-  page = simplescrape.scrape_link('')
+if simplescrape.check_link(url):
+  page = simplescrape.scrape_link(url)
   title = page.title
   description = page.description
   image = page.image

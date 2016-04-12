@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 # Copyright Jacob Bennett 4/12/16
+# v1.0
 # Status: Stable
 
 import requests, lxml.html, json, re
-from flask import jsonify
 
 # Unique user-agent for crawling
 headers = {'user-agent': 'Simple Scraper'}

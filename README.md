@@ -6,7 +6,7 @@ This is a simple and extremely lightweight web page scraper especially designed 
 ```python
 import simplescrape
 
-url = http://www.theverge.com/2016/4/12/11416122/there-will-be-a-bot-for-everything
+url = 'http://www.theverge.com/2016/4/12/11416122/there-will-be-a-bot-for-everything'
 
 if simplescrape.check_link(url):
   page = simplescrape.scrape_link(url)

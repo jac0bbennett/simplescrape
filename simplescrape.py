@@ -58,11 +58,11 @@ class scrape_link:
 
         try:
             # Initial check for favicon URL
-            self.favicon = t.xpath('//link[@rel="icon" or @rel="shortcut icon"]/@href')[0].split('//')[0]
+            self.favicon = t.xpath('//link[@rel="icon" or @rel="shortcut icon" or @rel="icon shortcut"]/@href')[0].split('//')[0]
             # Make sure it isn't just getting a protocol
             if self.favicon == '' or self.favicon == 'http:' or self.favicon == 'https:':
                 # If it is, get the real URL
-                self.favicon = t.xpath('//link[@rel="icon" or @rel="shortcut icon"]/@href')[0].split('//')[1]
+                self.favicon = t.xpath('//link[@rel="icon" or @rel="shortcut icon" or @rel="icon shortcut"]/@href')[0].split('//')[1]
             try:
                 # If it found it, check if it is a live page
                 a = requests.get('http://' + self.favicon, headers=headers)

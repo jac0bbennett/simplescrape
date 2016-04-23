@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright Jacob Bennett 4/12/16
+# Copyright Jacob Bennett 4/22/16
 # v1.0
 # Status: Stable
 
